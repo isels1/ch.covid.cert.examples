@@ -100,7 +100,7 @@
             }
           ]
         },
-        "tt ": {
+        "tt": {
           "description": "Type of Test",
           "type": "string"
         },
