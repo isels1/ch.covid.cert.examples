@@ -1,0 +1,32 @@
+{
+    "nam": [
+        {
+            "_fn": "Červenková Panklová",
+            "_gn": "Jiřina Alena"
+        }
+    ],
+    "dob": "1987-03-22",
+    "dsc": "doc-sign-certifi",
+    "t": [
+        {
+            "tg": {
+                "code": "840539006",
+                "system": "2.16.840.1.113883.6.96"
+            },
+            "tt": "LP6464-4",
+            "nm": "Testname",
+            "ma": {
+                "code": "1232"
+            },
+            "sc": "2021-04-22T16:13:32.063Z",
+            "dr": "2021-04-23T15:00:00.063Z",
+            "tr": {
+                "code": "260373001"
+            },
+            "tc": "Amavita Apotheke Bahnhof Bern",
+            "co": "CH",
+            "is": "Bundesamt für Gesundheit (BAG)",
+            "ci": "1.0.0:CH:5fhLA2gdjkk21123AABB123:12"
+        }
+    ]
+}
