@@ -10,7 +10,7 @@ Examples for the codiv-19-certificat
 
 There is a general part, all cert types must include.
 
-```json
+```javascript
 {
     // Surname(s), forename(s) - in that order 
     // Array of objects, defined in "DGC.schema.json"
