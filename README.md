@@ -10,7 +10,7 @@ Examples for the codiv-19-certificat
 
 There is a general part, all cert types must include.
 
-```json
+```javascript
 {
     // Surname(s), forename(s) - in that order 
     // Array of objects, defined in "DGC.schema.json"
@@ -25,6 +25,7 @@ There is a general part, all cert types must include.
     // String with given pattern according dob_valid_date_range in "DGC.Core.Types.schema.json"
     "dob": "1987-03-22",
     // Document Signing Certificate: 8 bytes
+    // First 8 bytes of the SHA-256 fingerprint
     // String, maxLength: 16 according dsc in "DGC.Types.schema.json"
     "dsc": "doc-sign-certifi",
     // Next elements would be the type spesific. Definition in separat chapters.
