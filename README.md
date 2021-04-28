@@ -17,8 +17,8 @@ There is a general part, all cert types must include.
     "nam": [
         // Object person_name as defined in "DGC.Core.Types.schema.json"
         {
-            "_fn": "Červenková Panklová",
-            "_gn": "Jiřina Alena"
+            "fn": "Červenková Panklová",
+            "gn": "Jiřina Alena"
         }
     ],
     // Date of Birth, ISO 8601
