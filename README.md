@@ -42,7 +42,7 @@ The vaccination part is defined as followed:
 
 ```javascript
 {
-    // Previous elements aare the generic ones. Definition above.
+    // Previous elements are the generic ones. Definition above.
     ...
     // Vaccination group
     // Array of objects, defined in "DGC.schema.json"
@@ -90,12 +90,13 @@ The vaccination part is defined as followed:
             "co": "CH",
             // Certificat Issuer
             // String with max length 50 according issuer in "DGC.Core.Types.schema.json"
-            // In CH the value shall be fixed to BAG/OFSP/FOPH --> no not forget the translations/languages (EN/DE/FR/IT)
+            // In CH the value shall be fixed to BAG/OFSP/FOPH --> do not forget the translations/languages (EN/DE/FR/IT)
             "is": "Bundesamt für Gesundheit (BAG)",
             // Unique Certificate Identifier: UVCI
             // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
             // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
-            "ci": "1.0.0:CH:5fhLA2gdjkk21123AABB123:12"
+            // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
+            "ci": "01:CHE:5fhLA2gdjkk21123AABB123:12"
         }
     ],
 }
@@ -104,4 +105,115 @@ The vaccination part is defined as followed:
 
 ## Tested
 
+The tested part is defined as followed:
+
+```javascript
+{
+    // Previous elements are the generic ones. Definition above.
+    ...
+    // Testing group
+    // Array of objects, defined in "DGC.schema.json"
+    "t": [
+        // Object testing_entry as defined in "DGC.Types.schema.json"
+        {
+            // disease or agent targeted
+            // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1
+            // Type object, required code & system according disease-agent-targeted in "DGC.ValueSets.schema.json"
+            "tg": {
+                "code": "840539006",
+                "system": "2.16.840.1.113883.6.96"
+            },
+            // Type of test
+            // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.7
+            // Type string, according tt in "DGC.Types.schema.json"
+            "tt": "LP6464-4",
+            // Testname
+            // Type string, according nm in "DGC.Types.schema.json"
+            // Optinal for NAAT Tests, in Switzerland this Value will always be set
+            "nm": "Testname",
+            // Test Manufacturer
+            // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.8
+            // Type object, required code with oneOf definition according test-manf in "DGC.ValueSets.schema.json"
+            // Optinal for NAAT Tests, in Switzerland this Value will always be set
+            "ma": {
+                "code": "1232" 
+            },
+            // Date/Time of Sample Collection
+            // Type string, format date-time ISO 8601 according sc in "DGC.Types.schema.json"
+            "sc": "2021-04-22T16:13:32.063Z",
+            // "Date/Time of Test Result
+            // Type string, format date-time ISO 8601 according dr in "DGC.Types.schema.json"
+            "dr": "2021-04-23T15:00:00.063Z",
+            // Test Result
+            // "EU eHealthNetwork: Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.9
+            // Type object, required code with oneOf definition according test-reslut in "DGC.ValueSets.schema.json"
+            "tr": {
+                "code": "260373001" 
+            },
+            // Testing Centre
+            // String with a maxLength of 50 according tc in "DGC.Types.schema.json"
+            "tc": "Amavita Apotheke Bahnhof Bern",
+            // Country of Test, ISO 3166 (where possible)
+            // String with pattern [A-Z]{1,10} according country_vt in "DGC.Core.Types.schema.json"
+            "co": "CH",
+            // Certificat Issuer
+            // String with max length 50 according issuer in "DGC.Core.Types.schema.json"
+            // In CH the value shall be fixed to BAG/OFSP/FOPH --> no not forget the translations/languages (EN/DE/FR/IT)
+            "is": "Bundesamt für Gesundheit (BAG)",
+            // Unique Certificate Identifier: UVCI
+            // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
+            // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
+            // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
+            "ci": "01:CHE:5fhLA2gdjkk21123AABB123"
+        }
+    ],
+}
+```
+
 ## Recovery
+
+The recovery part is defined as followed:
+
+```javascript
+{
+    // Previous elements are the generic ones. Definition above.
+    ...
+    // Recovery group
+    // Array of objects, defined in "DGC.schema.json"
+    "r": [
+        // Object recovery_entry as defined in "DGC.Types.schema.json"
+        {
+            // disease or agent targeted
+            // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1
+            // Type object, required code & system according disease-agent-targeted in "DGC.ValueSets.schema.json"
+            "tg": {
+                "code": "840539006",
+                "system": "2.16.840.1.113883.6.96"
+            },
+            // Date of First Positive Test Result, ISO 8601
+            // String with date content according fr in "DGC.Types.schema.json" 
+            "fr": "2021-04-22",
+            // Country of Vaccination, ISO 3166 (where possible)
+            // String with pattern [A-Z]{1,10} according country_vt in "DGC.Core.Types.schema.json"
+            "co": "CH",
+            // Certificat Issuer
+            // String with max length 50 according issuer in "DGC.Core.Types.schema.json"
+            // In CH the value shall be fixed to BAG/OFSP/FOPH --> do not forget the translations/languages (EN/DE/FR/IT)
+            "is": "Bundesamt für Gesundheit (BAG)",
+            // Certificate Valid From, ISO 8601
+            // String with date-time content according df in "DGC.Types.schema.json" 
+            "df": "2021-05-10T12:00:00.000Z",
+            // Certificate Valid Until, ISO 8601
+            // String with date-time content according du in "DGC.Types.schema.json"
+            // MAX du is fr + 180d according https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_dt-specifications_en.pdf
+            "du": "2021-11-06T12:00:00.000Z",
+            // Unique Certificate Identifier: UVCI
+            // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
+            // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
+            // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
+            "ci": "01:CHE:5fhLA2gdjkk21123AABB123:12"
+        }
+    ],
+}
+
+```
