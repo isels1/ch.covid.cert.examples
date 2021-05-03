@@ -65,14 +65,16 @@ The vaccination part is defined as followed:
             // vaccine medicinal product
             // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3
             // Type object, required code with oneOf definition according vaccine-medicinal-product in "DGC.ValueSets.schema.json"
-            // Open: Definition of CH-specific product-codes?
+            // Use the EU definition (commercial_name), as long as the vaccination can be found in the databese https://covid-19-diagnostics.jrc.ec.europa.eu/devices/hsc-common-recognition-rat
+            // If not found, use code from SwissMedic 
             "mp": {
                 "code": "EU/1/20/1507"
             },
             // Marketing Authorization Holder - if no MAH present, thenmanufacturer
             // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3
             // Type object, required code with oneOf definition according vaccine-mah-manf in "DGC.ValueSets.schema.json"
-            // Open: Definition of CH-specific organisation identifier?
+            // Use the EU definition (manufacturer.name), as long as the vaccination can be found in the databese https://covid-19-diagnostics.jrc.ec.europa.eu/devices/hsc-common-recognition-rat
+            // If not found, use code from SwissMedic
             "ma": {
                 "code": "ORG-100030215" 
             },
