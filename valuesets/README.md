@@ -17,7 +17,7 @@ The vaccination-prophylaxis (key `vp` inside the `v` object) is the SNOMED CT or
 Use the ATC code, when the vaccine is neither an antigen nor a mRNA or the information is missing.
 The valueset definition can be found on the GitHub Repository of the `eu-digital-green-certificates` in the `ehn-dgc-schema` project under following [link](https://github.com/eu-digital-green-certificates/ehn-dgc-schema/blob/main/valuesets/vaccine-prophylaxis.json).
 
-The original valueset definition linked below contains a small incinsitency: The code `J07BX03` should be from ATC but is specified as a code from the SNOMED CT system. The correct valueset entry should be:
+The original valueset definition linked above contains a small inconsistency: The code `J07BX03` should be from ATC but is specified as a code from the SNOMED CT system. The correct valueset entry should be:
 
 ```json
 "J07BX03": {
