@@ -136,7 +136,7 @@
     "type_code": "LP217198-3",
     "manufacturer": "Nal von minden GmbH",
     "manufacturer_code_eu": "1162",
-    "manufacturer_code_ch": "Nein",
+    "manufacturer_code_ch": "Ja",
     "active": "true"
   }, {
     "name": "Exdia COVID-19 Ag",
@@ -184,7 +184,7 @@
     "type_code": "LP217198-3",
     "manufacturer": "SD BIOSENSOR Inc",
     "manufacturer_code_eu": "345",
-    "manufacturer_code_ch": "Nicht bekannt",
+    "manufacturer_code_ch": "Nein",
     "active": "true"
   }, {
     "name": "CLINITEST Rapid Covid-19 Antigen Test",
@@ -192,7 +192,7 @@
     "type_code": "LP217198-3",
     "manufacturer": "Siemens Healthineers",
     "manufacturer_code_eu": "1218",
-    "manufacturer_code_ch": "Nein",
+    "manufacturer_code_ch": "Ja",
     "active": "true"
   }, {
     "name": "Rapid SARS-CoV-2 Antigen Test Card",
@@ -208,7 +208,7 @@
     "type_code": "LP217198-3",
     "manufacturer": "Zhejiang Orient Gene Biotech",
     "manufacturer_code_eu": "1343",
-    "manufacturer_code_ch": "Nein",
+    "manufacturer_code_ch": "Ja",
     "active": "true"
   }, {
     "name": "BIOSYNEX COVID-19 Ag + BSS",
