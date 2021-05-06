@@ -197,6 +197,27 @@
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
+    },
+    "Norwegen": {
+      "display": "Norway",
+      "lang": "de",
+      "active": true,
+      "version": "http://iso-3166-1_alpha-2/1",
+      "system": "http://iso-3166-1_alpha-2"
+    },
+    "ISL": {
+      "display": "Iceland",
+      "lang": "de",
+      "active": true,
+      "version": "http://iso-3166-1_alpha-2/1",
+      "system": "http://iso-3166-1_alpha-2"
+    },
+    "LIE": {
+      "display": "Liechtenstein",
+      "lang": "de",
+      "active": true,
+      "version": "http://iso-3166-1_alpha-2/1",
+      "system": "http://iso-3166-1_alpha-2"
     }
   }
 }

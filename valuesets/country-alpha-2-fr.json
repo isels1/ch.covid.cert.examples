@@ -191,15 +191,29 @@
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "SE": {
-      "display": "Suède",
+    "CH": {
+      "display": "Suisse",
       "lang": "fr",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "CH": {
-      "display": "Suisse",
+    "NO": {
+      "display": "Norvège",
+      "lang": "fr",
+      "active": true,
+      "version": "http://iso-3166-1_alpha-2/1",
+      "system": "http://iso-3166-1_alpha-2"
+    },
+    "IS": {
+      "display": "Islande",
+      "lang": "fr",
+      "active": true,
+      "version": "http://iso-3166-1_alpha-2/1",
+      "system": "http://iso-3166-1_alpha-2"
+    },
+    "LI": {
+      "display": "Liechtenstein",
       "lang": "fr",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
