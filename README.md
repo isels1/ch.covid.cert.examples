@@ -213,11 +213,11 @@ The recovery part is defined as followed:
 
 ## Mapping
 
-For the specified values (like test manufacturer) use the mapping description in the [readme](cumulated/README.md) of the cumulated folder.
+For the specified values (like test manufacturer) use the mapping description in the [readme](./cumulated) of the cumulated folder.
 
 ## Valuesets
 
-Check readme.
+WIP.
 
 ## Validation
 
