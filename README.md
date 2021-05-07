@@ -222,4 +222,4 @@ WIP.
 ## Validation
 
 Use a json validator (ex: [JSON Schema Validator](https://www.jsonschemavalidator.net/)).
-Copy and past in the "Select schema" field the DGC.schema.json file and in the "Input JSON" one of the example files.
+Copy and paste in the "Select schema" field the DGC.schema.json file and in the "Input JSON" one of the example files.
