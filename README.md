@@ -6,7 +6,7 @@ Examples for the codiv-19-certificat
 
 *Look up the newest Schema Version online, published by the EU ([GitHub Repo](https://github.com/eu-digital-green-certificates/ehn-dgc-schema)). The example .json files are based on the Document `Guidelines on Value Sets for Digital Green Certificates Version 1.0 2021-04-21` [Link](https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_dt-specifications_en.pdf)*
 
-## Content
+## Cetificat Content
 
 The chapter [generic](#generic) describes the generic vaccination certificate part using the examlpe.
 The chapters [vaccination](#vaccination), [tested](#tested) and [recovery](#recovery) describe the specific entries for the different kinds of the certificate.
