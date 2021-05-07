@@ -12,22 +12,32 @@ There is a general part, all cert types must include.
 
 ```javascript
 {
+    // Version of the schema, according to Semantic versioning (ISO, https://semver.org/ version 2.0.0 or newer)
+    // Type string with pattern "^\\d+.\\d+.\\d+$", defined in "DGC.schema.json"
+    "ver": "1.0.0",
     // Surname(s), forename(s) - in that order 
     // Array of objects, defined in "DGC.schema.json"
     "nam": [
         // Object person_name as defined in "DGC.Core.Types.schema.json"
+        // Only required "fnt" other values are optional
         {
+            // Family name
+            // String max length 50 chars
             "fn": "Červenková Panklová",
-            "gn": "Jiřina Alena"
+            // Standardised family name
+            // String max length 50 chars with pattern "^[A-Z<]*$"
+            "fnt": "CERVENKOVA<PANKLOVA",
+            // Given name
+            // String max length 50 chars
+            "gn": "Jiřina Alena",
+            // Standardised given name
+            // String max length 50 chars with pattern "^[A-Z<]*$"
+            "gnt": "JIRINA<ALENA"
         }
     ],
     // Date of Birth, ISO 8601
-    // String with given pattern according dob_valid_date_range in "DGC.Core.Types.schema.json"
+    // String format date with pattern "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])", defined dob in "DGC.schema.json"
     "dob": "1987-03-22",
-    // Document Signing Certificate: 8 bytes
-    // First 8 bytes of the SHA-256 fingerprint
-    // String, maxLength: 16 according dsc in "DGC.Types.schema.json"
-    "dsc": "doc-sign-certifi",
     // Next elements would be the type spesific. Definition in separat chapters.
     ...
 }
@@ -98,7 +108,7 @@ The vaccination part is defined as followed:
             // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
             // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
             // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
-            "ci": "01:CHE:5fhLA2gdjkk21123AABB123:12"
+            "ci": "01:CH:5fhLA2gdjkk21123AABB123:12"
         }
     ],
 }
@@ -168,7 +178,7 @@ The tested part is defined as followed:
             // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
             // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
             // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
-            "ci": "01:CHE:5fhLA2gdjkk21123AABB123"
+            "ci": "01:CH:5fhLA2gdjkk21123AABB123"
         }
     ],
 }
@@ -215,7 +225,7 @@ The recovery part is defined as followed:
             // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
             // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
             // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
-            "ci": "01:CHE:5fhLA2gdjkk21123AABB123:12"
+            "ci": "01:CH:5FHLA2GDJKK21123AABB123:12"
         }
     ],
 }
