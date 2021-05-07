@@ -1,33 +1,24 @@
 {
-    "nam": [
-        {
-            "fn": "Červenková Panklová",
-            "gn": "Jiřina Alena"
-        }
-    ],
+    "ver": "1.0.0",
+	"nam": {
+    "fn": "Červenková Panklová",
+    "gn": "Jiřina Alena",
+    "fnt": "CERVENKOVA<PANKLOVA",
+    "gnt": "JIRINA<ALENA"
+  },
     "dob": "1987-03-22",
-    "dsc": "doc-sign-certifi",
-    "v": [
-        {
-            "tg": {
-                "code": "840539006",
-                "system": "2.16.840.1.113883.6.96"
-            },
-            "vp": {
-                "code": "1119349007"
-            },
-            "mp": {
-                "code": "EU/1/20/1507"
-            },
-            "ma": {
-                "code": "ORG-100030215" 
-            },
-            "dn": 1,
-            "sd": 2,
-            "dt": "2021-04-22",
-            "co": "CH",
-            "is": "Bundesamt für Gesundheit (BAG)",
-            "ci": "01:CHE:5fhLA2gdjkk21123AABB123:12"
-        }
-    ]
+  "v": [
+    {
+      "tg": "840539006",
+      "vp": "1119349007",
+      "mp": "EU/1/20/1507",
+      "ma": "ORG-100030215",
+      "dn": 1,
+      "sd": 2,
+      "dt": "2021-04-22",
+      "co": "CH",
+      "is": "Bundesamt für Gesundheit (BAG)",
+      "ci": "01:CH:PlA8UWS60Z4RZVALl6GAZ:12"
+    }
+  ]
 }
