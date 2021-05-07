@@ -61,33 +61,23 @@ The vaccination part is defined as followed:
         {
             // disease or agent targeted
             // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1
-            // Type object, required code & system according disease-agent-targeted in "DGC.ValueSets.schema.json"
-            "tg": {
-                "code": "840539006",
-                "system": "2.16.840.1.113883.6.96"
-            },
+            // Type string according disease-agent-targeted in "DGC.ValueSets.schema.json"
+            "tg": "840539006",
             // vaccine or prophylaxis
             // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.2
-            // Type object, required code with oneOf definition according vaccine-prophylaxis in "DGC.ValueSets.schema.json"
-            "vp": {
-                "code": "1119349007"
-            },
+            // Type string according vaccine-prophylaxis in "DGC.ValueSets.schema.json"
+            // Shall contain one of the values "prophylaxis_code" defined in https://github.com/isels1/ch.covid.cert.examples/blob/main/cumulated/covid-19-vaccines.json
+            "vp": "1119349007",
             // vaccine medicinal product
             // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3
-            // Type object, required code with oneOf definition according vaccine-medicinal-product in "DGC.ValueSets.schema.json"
-            // Use the EU definition, as long as the vaccination can be found in the list in chapter 2.3 of https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_dt-specifications_en.pdf
-            // If not found, use code from SwissMedic 
-            "mp": {
-                "code": "EU/1/20/1507"
-            },
+            // Type string according vaccine-medicinal-product in "DGC.ValueSets.schema.json"
+            // Shall contain one of the values "code" defined in https://github.com/isels1/ch.covid.cert.examples/blob/main/cumulated/covid-19-vaccines.json
+            "mp": "EU/1/20/1507",
             // Marketing Authorization Holder - if no MAH present, thenmanufacturer
             // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.3
-            // Type object, required code with oneOf definition according vaccine-mah-manf in "DGC.ValueSets.schema.json"
-            // Use the EU definition, as long as the manufacturer can be found in list in chapter 2.4 of  https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_dt-specifications_en.pdf
-            // If not found, use code from SwissMedic
-            "ma": {
-                "code": "ORG-100030215" 
-            },
+            // Type string vaccine-mah-manf in "DGC.ValueSets.schema.json"
+            // Shall contain one of the values "auth_holder_code" defined in https://github.com/isels1/ch.covid.cert.examples/blob/main/cumulated/covid-19-vaccines.json
+            "ma": "ORG-100030215",
             // Dose number
             // Int min 1, max 9 according dose_posint in "DGC.Core.Types.schema.json"
             "dn": 1,
@@ -108,7 +98,7 @@ The vaccination part is defined as followed:
             // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
             // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
             // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
-            "ci": "01:CH:5fhLA2gdjkk21123AABB123:12"
+            "ci": "01:CH:PlA8UWS60Z4RZVALl6GAZ:12"
         }
     ],
 }
