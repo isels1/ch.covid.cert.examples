@@ -6,7 +6,12 @@ Examples for the codiv-19-certificat
 
 *Look up the newest Schema Version online, published by the EU ([GitHub Repo](https://github.com/eu-digital-green-certificates/ehn-dgc-schema)). The example .json files are based on the Document `Guidelines on Value Sets for Digital Green Certificates Version 1.0 2021-04-21` [Link](https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_dt-specifications_en.pdf)*
 
-## General
+## Content
+
+The chapter [generic](#generic) describes the generic vaccination certificate part using the examlpe.
+The chapters [vaccination](#vaccination), [tested](#tested) and [recovery](#recovery) describe the specific entries for the different kinds of the certificate.
+
+### Generic
 
 There is a general part, all cert types must include.
 
@@ -46,7 +51,7 @@ There is a general part, all cert types must include.
 
 Followed by one of the elements `v`, `t` or `r`.
 
-## Vaccination
+### Vaccination
 
 The vaccination part is defined as followed:
 
@@ -105,7 +110,7 @@ The vaccination part is defined as followed:
 
 ```
 
-## Tested
+### Tested
 
 The tested part is defined as followed:
 
@@ -161,7 +166,7 @@ The tested part is defined as followed:
 }
 ```
 
-## Recovery
+### Recovery
 
 The recovery part is defined as followed:
 
@@ -205,6 +210,12 @@ The recovery part is defined as followed:
 }
 
 ```
+
+## Mapping
+
+## Valuesets
+
+Check readme.
 
 ## Validation
 
