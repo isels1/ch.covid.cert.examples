@@ -1,8 +1,8 @@
 # Cumulated
 
-The following chapters discribe the mapping of the cumulated arrays into the certificate content.
-
 ## Mapping
+
+This chapter discribes the mapping of the cumulated arrays into the certificate content.
 
 ### Vaccines
 
@@ -23,9 +23,12 @@ The file "covid-19-tests.json" shall be used as whitelist for the valid test kit
 | Cumulated JSON path | Certificate JSON path |
 | ------------------- | --------------------- |
 | entries[n].type_code | t[0].tt |
-| entries[n].manufacturer_code_eu | v[0].ma |
+| entries[n].manufacturer_code_eu | v[0].ma<sup>1</sup> |
+| entries[n].type | v[0].nm<sup>2</sup> |
 
-> Where "n" is the array pos of the corresponding test kit entry.
+> Where `n` is the array pos of the corresponding test kit entry.
+> <sup>1</sup>: Use `.ma` when the test type is "Rapid immunoassay" (type code LP217198-3)
+> <sup>2</sup>: Use `.nm` when the test type is "Nucleic acid amplification with probe detection" (type code LP6464-4). This field is not in the tested example.
 
 ## Structure
 
@@ -79,16 +82,16 @@ The structure of the "covid-19-vaccines.json":
 Following table shows the mapping from the value sets to the cumulated files:
 | Cumulated JSON path | vaccine-medical-product.json | vaccine-prophylaxis.json | vaccines-auth-holders.json |
 | ------------------- | ---------------------------- | ------------------------ | -------------------------- |
-| entries[n].name | valueSetValues.x<sup>1</sup>.display | - | - |
-| entries[n].code | valueSetValues.x<sup>1</sup> | - | - |
-| entries[n].prophylaxis | - | valueSetValues.y<sup>2</sup>.display | - |
-| entries[n].prophylaxis_code | - | valueSetValues.y<sup>2</sup> | - |
-| entries[n].auth_holder | - | - | valueSetValues.z<sup>3</sup>.display |
-| entries[n].auth_holder_code | - | - | valueSetValues.z<sup>3</sup> |
+| entries[n].name | valueSetValues.x<sup>3</sup>.display | - | - |
+| entries[n].code | valueSetValues.x<sup>3</sup> | - | - |
+| entries[n].prophylaxis | - | valueSetValues.y<sup>4</sup>.display | - |
+| entries[n].prophylaxis_code | - | valueSetValues.y<sup>4</sup> | - |
+| entries[n].auth_holder | - | - | valueSetValues.z<sup>5</sup>.display |
+| entries[n].auth_holder_code | - | - | valueSetValues.z<sup>5</sup> |
 | entries[n].active | valueSetValues.x<sup>1</sup>.active | - | - |
 
-> <sup>1</sup>: x represents the key names (medical product number) of the objects in the valueSetValues object.
-> <sup>2</sup>: y represents the key names (SNOMED CT or ATC code) of the objects in the valueSetValues object.
-> <sup>3</sup>: z represents the key names (organisation id) of the objects in the valueSetValues object.
+> <sup>3</sup>: `x` represents the key names (medical product number) of the objects in the valueSetValues object.
+> <sup>4</sup>: `y` represents the key names (SNOMED CT or ATC code) of the objects in the valueSetValues object.
+> <sup>5</sup>: `z` represents the key names (organisation id) of the objects in the valueSetValues object.
 
 ### Tests structure
