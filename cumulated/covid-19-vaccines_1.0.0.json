@@ -11,7 +11,7 @@
       "auth_holder": "BioNTech Manufacturing GmbH",
       "auth_holder_code": "ORG-100030215",
       "active": "true"
-    },{
+    }, {
       "name": "COVID-19 Vaccine Moderna",
       "code":"EU/1/20/1507",
       "prophylaxis": "COVID-19 mRNA vaccine",
@@ -19,7 +19,7 @@
       "auth_holder": "Moderna Biotech Spain, S.L.",
       "auth_holder_code": "ORG-100031184",
       "active": "true"
-    },{
+    }, {
       "name": "Vaxzevria",
       "code":"EU/1/21/1529",
       "prophylaxis": "COVID-19 Vaccine",
@@ -27,7 +27,7 @@
       "auth_holder": "AstraZeneca AB",
       "auth_holder_code": "ORG-100001699",
       "active": "true"
-    },{
+    }, {
       "name": "COVID-19 Vaccine Janssen",
       "code":"EU/1/20/1525",
       "prophylaxis": "COVID-19 Vaccine",
