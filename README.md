@@ -184,40 +184,37 @@ The recovery part is defined as followed:
     ...
     // Recovery group
     // Array of objects, defined in "DGC.schema.json"
-    "r": [
-        // Object recovery_entry as defined in "DGC.Types.schema.json"
-        {
-            // disease or agent targeted
-            // Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1
-            // Type object, required code & system according disease-agent-targeted in "DGC.ValueSets.schema.json"
-            "tg": {
-                "code": "840539006",
-                "system": "2.16.840.1.113883.6.96"
-            },
-            // Date of First Positive Test Result, ISO 8601
-            // String with date content according fr in "DGC.Types.schema.json" 
-            "fr": "2021-04-22",
-            // Country of Vaccination, ISO 3166 (where possible)
-            // String with pattern [A-Z]{1,10} according country_vt in "DGC.Core.Types.schema.json"
-            "co": "CH",
-            // Certificat Issuer
-            // String with max length 50 according issuer in "DGC.Core.Types.schema.json"
-            // In CH the value shall be fixed to BAG/OFSP/FOPH --> do not forget the translations/languages (EN/DE/FR/IT)
-            "is": "Bundesamt für Gesundheit (BAG)",
-            // Certificate Valid From, ISO 8601
-            // String with date-time content according df in "DGC.Types.schema.json" 
-            "df": "2021-05-10T12:00:00.000Z",
-            // Certificate Valid Until, ISO 8601
-            // String with date-time content according du in "DGC.Types.schema.json"
-            // MAX du is fr + 180d according https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_dt-specifications_en.pdf
-            "du": "2021-11-06T12:00:00.000Z",
-            // Unique Certificate Identifier: UVCI
-            // Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
-            // Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
-            // Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
-            "ci": "01:CH:5FHLA2GDJKK21123AABB123:12"
-        }
-    ],
+	"r": [
+		// Object recovery_entry as defined in "DGC.Types.schema.json"
+		{
+			// disease or agent targeted
+			// Value Sets for Digital Green Certificates. version 1.0, 2021-04-16, section 2.1
+			// Type string, requires code disease-agent-targeted in "DGC.ValueSets.schema.json"
+			"tg": "840539006",
+			// Date of First Positive Test Result, ISO 8601
+			// String with date content according fr in "DGC.Types.schema.json" 
+			"fr": "2021-04-22",
+			// Country of Vaccination, ISO 3166 (where possible)
+			// String with pattern [A-Z]{1,10} according country_vt in "DGC.Core.Types.schema.json"
+			"co": "CH",
+			// Certificat Issuer
+			// String with max length 50 according issuer in "DGC.Core.Types.schema.json"
+			// In CH the value shall be fixed to BAG/OFSP/FOPH --> do not forget the translations/languages (EN/DE/FR/IT)
+			"is": "Bundesamt für Gesundheit (BAG)",
+			// Certificate Valid From, ISO 8601
+			// String with date content according df in "DGC.Types.schema.json" 
+			"df": "2021-05-01",
+			// Certificate Valid Until, ISO 8601
+			// String with date content according du in "DGC.Types.schema.json"
+			// MAX duration is df + 180 days according https://ec.europa.eu/health/sites/health/files/ehealth/docs/digital-green-certificates_dt-specifications_en.pdf
+			"du": "2021-10-21",
+			// Unique Certificate Identifier: UVCI
+			// Unique string maxLength 50 according certification_id in "DGC.Core.Types.schema.json"
+			// Example according definition in https://ec.europa.eu/health/sites/health/files/ehealth/docs/vaccination-proof_interoperability-guidelines_en.pdf ANNEX 2
+			// Additional Info in the eHN Disscusion https://github.com/ehn-digital-green-development/ehn-dgc-schema/issues/15
+			"ci": "01:CH:PlA8UWS60Z4RZVALl6GAZ:12"
+		}
+	]
 }
 
 ```
