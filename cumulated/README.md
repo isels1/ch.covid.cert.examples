@@ -159,8 +159,8 @@ Following table shows the mapping from the value sets to the cumulated files:
 | entries[n].manufacturer_code_eu | - | valueSetValues.x<sup>6</sup> | - |
 | entries[n].active | valueSetValues.x<sup>6</sup>.active | - | - |
 
-> <sup>6</sup>: `x` represents the key names (manufacturer code) of the objects in the valueSetValues object.
-> <sup>7</sup>: One object needs to contain the "Nucleic acid amplification with probe detection" test
-> <sup>8</sup>: If test is found in ../valuesets/test-manufacturer-and-name.json, use array pos [0] as fixed value.
+> <sup>6</sup>: `x` represents the key names (manufacturer code) of the objects in the valueSetValues object. 
+> <sup>7</sup>: One object needs to contain the "Nucleic acid amplification with probe detection" test. 
+> <sup>8</sup>: If test is found in ../valuesets/test-manufacturer-and-name.json, use array pos [0] as fixed value. 
 > <sup>9</sup>: `y` represents the key names (test type code) of the objects in the valueSetValues object.
 
