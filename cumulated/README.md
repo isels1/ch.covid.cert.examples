@@ -88,10 +88,79 @@ Following table shows the mapping from the value sets to the cumulated files:
 | entries[n].prophylaxis_code | - | valueSetValues.y<sup>4</sup> | - |
 | entries[n].auth_holder | - | - | valueSetValues.z<sup>5</sup>.display |
 | entries[n].auth_holder_code | - | - | valueSetValues.z<sup>5</sup> |
-| entries[n].active | valueSetValues.x<sup>1</sup>.active | - | - |
+| entries[n].active | valueSetValues.x<sup>3</sup>.active | - | - |
 
 > <sup>3</sup>: `x` represents the key names (medical product number) of the objects in the valueSetValues object.
 > <sup>4</sup>: `y` represents the key names (SNOMED CT or ATC code) of the objects in the valueSetValues object.
 > <sup>5</sup>: `z` represents the key names (organisation id) of the objects in the valueSetValues object.
 
 ### Tests structure
+The structure of the "covid-19-tests.json":
+
+```javascript
+{
+    // Id of the list
+    "Id": "Covid 19 Tests",
+    // Last modified date
+    "Date": "2021-05-07",
+    // Version code
+    "Version": "1.0.0",
+    // Entries array, where all acceppted tests are listed
+    "entries": [
+        // Object containing merged information of a test
+        {
+            // Name of test as string
+            // Current source: "display" value of ../valuesets/test-name.json "valueSetValues" entries.
+            "name": "Panbio COVID-19 Ag Test",
+            // Type of test as string
+            // Type of test, as long as it is found in ../valuesets/test-manufacturer-and-name.json the value is "Rapid immunoassay"
+            // One object needs to contain the "Nucleic acid amplification with probe detection"
+            // Current source: "display" value of ../valuesets/test-type.json "valueSetValues" entries.
+            "type": "Rapid immunoassay",
+            // Type code of test type as string
+            // If type of test is "Rapid immunossay" and found in ../valuesets/test-manufacturer-and-name.json, key of array pos [0]
+            // If type of test is "Nucleic acid amplification with probe detection", key of array pos [1]
+            // Current source: key of ../valuesets/test-type.json "valueSetValues" entries.
+            "type_code": "LP217198-3",
+            // Manufacturer name of test as string
+            // Current source: "display" value of ../valuesets/test-manufacturer.json "valueSetValues" entries.
+            "manufacturer": "Abbott Rapid Diagnostics",
+            // Swiss testkit code of test as string
+            // Current source: TestKitCode of table entry from the document "Listen der validierten SARS-CoV-2-Schnelltests1.pdf" published by FOPH
+            // Only set value, if "name" and "manufacturer" matches
+            "swiss_test_kit": "2",
+            // EU code of manufacturer as string
+            // Current source: key of ../valuesets/test-manufacturer.json "valueSetValues" entries.
+            "manufacturer_code_eu": "1232",
+            // If authorization is active
+            // Current source: "active" value of ../valuesets/test-name.json "valueSetValues" entries.
+            "active": "true"
+        }
+    ]
+}
+
+```
+
+#### Maintenance
+
+Before the cumulated file can be manipulated, the original test-manufacturer-and-name.json has to be split in two file:
+
+- test-manufacturer.json
+- test-name.json
+
+Following table shows the mapping from the value sets to the cumulated files:
+| Cumulated JSON path | test-name.json | test-manufacturer.json | test-type.json |
+| ------------------- | ---------------------------- | ------------------------ | -------------------------- |
+| entries[n].name | valueSetValues.x<sup>6</sup>.display OR "PCR"<sup>7</sup> | - | - |
+| entries[n].type | - | - | valueSetValues.[0].display<sup>8</sup> OR valueSetValues.[1].display<sup>7</sup> |
+| entries[n].type_code | - | - | valueSetValues.y<sup>9</sup> |
+| entries[n].manufacturer | - | valueSetValues.x<sup>6</sup> | - |
+| entries[n].swiss_test_kit | - | - | - |
+| entries[n].manufacturer_code_eu | - | valueSetValues.x<sup>6</sup> | - |
+| entries[n].active | valueSetValues.x<sup>6</sup>.active | - | - |
+
+> <sup>6</sup>: `x` represents the key names (manufacturer code) of the objects in the valueSetValues object.
+> <sup>7</sup>: One object needs to contain the "Nucleic acid amplification with probe detection" test
+> <sup>8</sup>: If test is found in ../valuesets/test-manufacturer-and-name.json, use array pos [0] as fixed value.
+> <sup>9</sup>: `y` represents the key names (test type code) of the objects in the valueSetValues object.
+
