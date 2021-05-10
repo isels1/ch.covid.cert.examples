@@ -217,7 +217,7 @@ For the specified values (like test manufacturer) use the mapping description in
 
 ## Valuesets
 
-WIP.
+The valuesets are documented and defined in the ./valueset folder. There the [readme](./valuesets) describes the mapping from the original valuesets published the EU to our. Then we use the valueset to get the ./cumulated files. These files should then contain the merged lists that can be used. More infomration and a mapping can be found in the [readme](./cumulated) of the cumulated folder.
 
 ## Validation
 
