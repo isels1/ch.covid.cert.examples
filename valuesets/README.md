@@ -34,6 +34,7 @@ The vaccine-medicinal-product (key `mp` inside the `v` object) is the code of th
 ### Mapping
 
 There is no mapping needed for the vaccine-prophylaxis valueset. Use the [original file](https://github.com/ehn-digital-green-development/ehn-dgc-schema/blob/main/valuesets/vaccine-medicinal-product.json).
+The merged vaccine file inside the ../cumulated folder then should only contain the accepted vaccines from Switzerland. Accepted means NOT the approved ones in Switzerland, but those that are accepted when crossing the border!
 
 ## vaccines-auth-holders
 
