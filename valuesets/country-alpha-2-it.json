@@ -1,223 +1,254 @@
 {
   "valueSetId": "country-alpha-2-it",
   "valueSetDate": "2021-05-05",
-  "valueSetValues": {
-    "AT": {
+  "valueSetValues": [
+    {
+      "short": "AT",
       "display": "Austria",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "BE": {
+    {
+      "short": "BE",
       "display": "Belgio",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "BG": {
+    {
+      "short": "BG",
       "display": "Bulgaria",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "HR": {
+    {
+      "short": "HR",
       "display": "Croazia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "CY": {
+    {
+      "short": "CY",
       "display": "Cipro",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "CZ": {
+    {
+      "short": "CZ",
       "display": "Tchéquie",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "DK": {
+    {
+      "short": "DK",
       "display": "Danimarca",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "EE": {
+    {
+      "short": "EE",
       "display": "Estonia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "FI": {
+    {
+      "short": "FI",
       "display": "Finlandia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "FR": {
+    {
+      "short": "FR",
       "display": "Francia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "DE": {
+    {
+      "short": "DE",
       "display": "Germania",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "GR": {
+    {
+      "short": "GR",
       "display": "Grecia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "HU": {
+    {
+      "short": "HU",
       "display": "Ungheria",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "IE": {
+    {
+      "short": "IE",
       "display": "Irlanda",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "IT": {
+    {
+      "short": "IT",
       "display": "Italia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "LV": {
+    {
+      "short": "LV",
       "display": "Lettonia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "LT": {
+    {
+      "short": "LT",
       "display": "Lituania",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "LU": {
+    {
+      "short": "LU",
       "display": "Lussemburgo",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "MT": {
+    {
+      "short": "MT",
       "display": "Malta",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "NL": {
+    {
+      "short": "NL",
       "display": "Paesi Bassi",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "PL": {
+    {
+      "short": "PL",
       "display": "Polonia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "PT": {
+    {
+      "short": "PT",
       "display": "Portogallo",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "RO": {
+    {
+      "short": "RO",
       "display": "Romania",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "SK": {
+    {
+      "short": "SK",
       "display": "Slovacchia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "SI": {
+    {
+      "short": "SI",
       "display": "Slovenia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "ES": {
+    {
+      "short": "ES",
       "display": "Spagna",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "SE": {
+    {
+      "short": "SE",
       "display": "Svezia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "CH": {
+    {
+      "short": "CH",
       "display": "Svizzera",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "NO": {
+    {
+      "short": "NO",
       "display": "Norvegia",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "IS": {
+    {
+      "short": "IS",
       "display": "Islanda",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     },
-    "LI": {
+    {
+      "short": "LI",
       "display": "Liechtenstein",
       "lang": "it",
       "active": true,
       "version": "http://iso-3166-1_alpha-2/1",
       "system": "http://iso-3166-1_alpha-2"
     }
-  }
+  ]
 }
