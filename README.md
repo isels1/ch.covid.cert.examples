@@ -21,8 +21,8 @@ There is a general part, all cert types must include.
     // Type string with pattern "^\\d+.\\d+.\\d+$", defined in "DGC.schema.json"
     "ver": "1.0.0",
     // Surname(s), forename(s) - in that order 
-    // Array of objects, defined in "DGC.schema.json"
-    "nam": [
+    // Objects, defined in "DGC.schema.json"
+    "nam": 
         // Object person_name as defined in "DGC.Core.Types.schema.json"
         // Only required "fnt" other values are optional
         {
@@ -38,8 +38,7 @@ There is a general part, all cert types must include.
             // Standardised given name
             // String max length 50 chars with pattern "^[A-Z<]*$"
             "gnt": "JIRINA<ALENA"
-        }
-    ],
+        },
     // Date of Birth, ISO 8601
     // String format date with pattern "[19|20][0-9][0-9]-(0[1-9]|1[0-2])-([0-2][1-9]|3[0|1])", defined dob in "DGC.schema.json"
     "dob": "1987-03-22",
